@@ -1,19 +1,11 @@
-var Guid = require("guid");
+var Dispatcher = require('flux').Dispatcher;
+var dispatcher = new Dispatcher();
 
-var listeners = {};
+dispatcher.handleAction = function(action){
+    this.dispatch({
+        source: 'VIEW_ACTION',
+        action: action
+    });
+};
 
-function dispatch(payload) {
-    for (var id in listeners) {
-        listeners[id](payload);
-    }
-}
-
-function register(cb) {
-    var id = Guid.create();
-    listeners[id] = cb;
-}
-
-module.exports = {
-    register: register,
-    dispatch: dispatch
-}
+module.exports = dispatcher;
