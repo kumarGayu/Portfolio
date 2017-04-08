@@ -217,7 +217,6 @@ a {
     border:5px solid #FFF;
     outline:1px solid #eee;
     padding: 5px;
-    z-index:2000;
 }
 
 #form_panel .row{

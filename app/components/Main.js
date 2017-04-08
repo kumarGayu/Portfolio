@@ -77,15 +77,6 @@ var Main = React.createClass({
 
   },
 
-  showTagDialog: function(event) {
-    this.setState({
-      isTagDialogHidden: false,
-      isTagsHidden: true,
-      left: event.pageX,
-      top: event.pageY
-    });
-  },
-
   getTags: function(){
     if(this.state.isTagsHidden === false){
       return <Tags tags={this.state.tags} imageX={this.state.imageX} imageY={this.state.imageY} onClick={this.onTagClick} onTagDelete={this.onTagDelete}> </Tags>;
@@ -181,13 +172,15 @@ var Main = React.createClass({
             <Button lable = 'Hide tags' onClick = {this.onHideTags}/>
           </Panel>
           <Panel className="center">
-            <TagDialog hidden= {false} addTag={this.addATag}/>
-            {this.getAlert()}
+            <TagDialog hidden= {false} addTag={this.addATag} />
+          </Panel>
+          <Panel>
+              {this.getAlert()}
           </Panel>
           <Panel className="drag-area center">
               <Panel>
               {this.getTags()}
-              <Image src={this.state.image} className={"img-thumbnail"}  ref="images" onClick={this.onClick} onContextMenu = {this.showTagDialog}/>
+              <Image src={this.state.image} ref="images" onClick={this.onClick} />
               </Panel>
           </Panel>
           <Panel className="center">
