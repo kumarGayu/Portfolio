@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
     "bower-install": "bower install",
-    "start": "npm run bower-install & npm run build & node server/server.js"
+    "start": "npm run bower-install && npm run build & node server/server.js"
   },
   "author": "nishant",
   "license": "ISC",
