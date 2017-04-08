@@ -21,6 +21,7 @@
     "object-assign": "^4.1.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-social-icons": "^2.6.0",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0"
   },
