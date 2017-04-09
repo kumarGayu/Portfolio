@@ -15,7 +15,9 @@ var Close = React.createClass({
 
     render: function() {
         return (
-            <div className = 'close' value = {this.props.lable} onClick = {this.onClose} />
+            <button type="button" className="close" aria-label="Close" value = {this.props.lable} onClick = {this.onClose}>
+                <span aria-hidden="true">&times;</span>
+            </button>
         );
     }
 });
