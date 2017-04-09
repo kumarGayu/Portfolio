@@ -311,7 +311,7 @@ function render(){
         </div>
     </section>
     <section>
-        <div id="cell-annotation">
+        <div id="container cell-annotation">
             <div className="card-header">
                 <h4 className="mb-0">
                     Easy Cell Annotation

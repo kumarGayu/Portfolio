@@ -82,7 +82,7 @@ var Tag = React.createClass({
     render: function() {
 
         return (
-            <div className="tagged dragMe" key={this.props.propKey} style={{left:this.props.position.x,top:this.props.position.y,display:"block"}} ref="draggable">
+            <div className="tagged dragMe" key={this.props.propKey} style={{display:"block"}} ref="draggable">
                 <div id={this.props.tag.tag} className={"circle tag-c "+this.props.tag.type} onClick={this.onClick}/>
                 {this.getClose()}
             </div>

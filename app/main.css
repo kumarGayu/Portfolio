@@ -64,13 +64,13 @@
 .border-preview-image button.left{
     float: left;
     vertical-align: center;
-    background: buttonshadow url("../images/prev.png") no-repeat scroll center center
+    background: buttonshadow url("img/prev.png") no-repeat scroll center center
 }
 
 .border-preview-image button.right{
     float: right;
     vertical-align: center;
-    background: buttonshadow url("../images/next.png") no-repeat scroll center center
+    background: buttonshadow url("img/next.png") no-repeat scroll center center
 }
 
 .border-preview-image{
@@ -150,7 +150,7 @@
     right: -14px;
     width: 25px;
     height: 25px;
-    background: transparent url("../image/close.png") no-repeat center center;
+    background: transparent url("img/close.png") no-repeat center center;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 10px;
